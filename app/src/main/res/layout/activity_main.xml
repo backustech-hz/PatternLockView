@@ -34,9 +34,9 @@
         android:layout_height="280dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        app:aspectRatio="square"
-        app:aspectRatioEnabled="true"
-        app:dotAnimationDuration="150"
-        app:dotCount="3"/>
+        app:patternLockView_aspectRatio="square"
+        app:patternLockView_aspectRatioEnabled="true"
+        app:patternLockView_dotAnimationDuration="150"
+        app:patternLockView_dotCount="3"/>
 
 </LinearLayout>

@@ -168,28 +168,28 @@ public class PatternLockView extends View {
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PatternLockView);
         try {
-            sDotCount = typedArray.getInt(R.styleable.PatternLockView_dotCount,
+            sDotCount = typedArray.getInt(R.styleable.PatternLockView_patternLockView_dotCount,
                     DEFAULT_PATTERN_DOT_COUNT);
-            mAspectRatioEnabled = typedArray.getBoolean(R.styleable.PatternLockView_aspectRatioEnabled,
+            mAspectRatioEnabled = typedArray.getBoolean(R.styleable.PatternLockView_patternLockView_aspectRatioEnabled,
                     false);
-            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatio,
+            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_patternLockView_aspectRatio,
                     ASPECT_RATIO_SQUARE);
-            mPathWidth = (int) typedArray.getDimension(R.styleable.PatternLockView_pathWidth,
+            mPathWidth = (int) typedArray.getDimension(R.styleable.PatternLockView_patternLockView_pathWidth,
                     ResourceUtils.getDimensionInPx(getContext(), R.dimen.pattern_lock_path_width));
-            mNormalStateColor = typedArray.getColor(R.styleable.PatternLockView_normalStateColor,
+            mNormalStateColor = typedArray.getColor(R.styleable.PatternLockView_patternLockView_normalStateColor,
                     ResourceUtils.getColor(getContext(), R.color.white));
-            mCorrectStateColor = typedArray.getColor(R.styleable.PatternLockView_correctStateColor,
+            mCorrectStateColor = typedArray.getColor(R.styleable.PatternLockView_patternLockView_correctStateColor,
                     ResourceUtils.getColor(getContext(), R.color.white));
-            mWrongStateColor = typedArray.getColor(R.styleable.PatternLockView_wrongStateColor,
+            mWrongStateColor = typedArray.getColor(R.styleable.PatternLockView_patternLockView_wrongStateColor,
                     ResourceUtils.getColor(getContext(), R.color.pomegranate));
-            mDotNormalSize = (int) typedArray.getDimension(R.styleable.PatternLockView_dotNormalSize,
+            mDotNormalSize = (int) typedArray.getDimension(R.styleable.PatternLockView_patternLockView_dotNormalSize,
                     ResourceUtils.getDimensionInPx(getContext(), R.dimen.pattern_lock_dot_size));
             mDotSelectedSize = (int) typedArray.getDimension(R.styleable
-                            .PatternLockView_dotSelectedSize,
+                            .PatternLockView_patternLockView_dotSelectedSize,
                     ResourceUtils.getDimensionInPx(getContext(), R.dimen.pattern_lock_dot_selected_size));
-            mDotAnimationDuration = typedArray.getInt(R.styleable.PatternLockView_dotAnimationDuration,
+            mDotAnimationDuration = typedArray.getInt(R.styleable.PatternLockView_patternLockView_dotAnimationDuration,
                     DEFAULT_DOT_ANIMATION_DURATION);
-            mPathEndAnimationDuration = typedArray.getInt(R.styleable.PatternLockView_pathEndAnimationDuration,
+            mPathEndAnimationDuration = typedArray.getInt(R.styleable.PatternLockView_patternLockView_pathEndAnimationDuration,
                     DEFAULT_PATH_END_ANIMATION_DURATION);
         } finally {
             typedArray.recycle();
